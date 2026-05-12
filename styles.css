@@ -260,10 +260,24 @@ h3 {
   border: 1px solid transparent;
 }
 
+.wa-icon {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  fill: currentColor;
+}
+
 .btn.primary {
   color: #fff;
   background: var(--orange);
   box-shadow: 0 14px 28px rgba(243, 107, 19, 0.24);
+}
+
+.btn.whatsapp {
+  color: #fff;
+  background: #128c7e;
+  box-shadow: 0 14px 28px rgba(18, 140, 126, 0.24);
 }
 
 .btn.secondary {
@@ -874,6 +888,22 @@ li {
   margin-top: 10px;
 }
 
+.whatsapp-link {
+  color: #fff;
+  background: #128c7e;
+  border-color: #128c7e;
+}
+
+.whatsapp-link span,
+.whatsapp-link strong {
+  color: #fff;
+}
+
+.whatsapp-link > span {
+  display: inline-flex;
+  align-items: center;
+}
+
 .contact-link span {
   display: block;
   color: var(--muted);
@@ -922,6 +952,31 @@ li {
   color: #fff;
   font-family: var(--font-display);
   font-weight: 850;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 30;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 18px;
+  color: #fff;
+  background: #128c7e;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  box-shadow: 0 18px 34px rgba(18, 140, 126, 0.34);
+  font-family: var(--font-display);
+  font-weight: 900;
+}
+
+.floating-whatsapp .wa-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 9px;
 }
 
 @media (max-width: 900px) {
