@@ -60,17 +60,23 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   min-width: 0;
   color: var(--navy);
   font-family: var(--font-display);
   font-weight: 850;
+  font-size: 1.14rem;
   letter-spacing: 0;
 }
 
 .brand img {
-  width: 58px;
-  height: 46px;
+  width: 116px;
+  height: 82px;
+  padding: 2px;
+  background: #fff;
+  border: 1px solid rgba(217, 224, 234, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(8, 46, 112, 0.12);
   object-fit: contain;
 }
 
@@ -1134,8 +1140,8 @@ li {
 
 @media (max-width: 430px) {
   .brand img {
-    width: 48px;
-    height: 38px;
+    width: 88px;
+    height: 64px;
   }
 
   .brand span {
